@@ -45,7 +45,10 @@ Enlace del proyecto
 https://www.tinkercad.com/things/84cOtP9RYw3-cool-kasi-fyyran/editel?tenant=circuits
 
 
+Fuentes
 
+
+https://www.youtube.com/playlist?list=PL7LaR6_A2-E11BQXtypHMgWrSR-XOCeyD
 
 
 
