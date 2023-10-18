@@ -14,7 +14,7 @@
 :angel:ignacio Villalba
 
 
-PROJECTO: Contador de 0 a 99 con Display 7 Segmentos y Multiplexación
+:bomb:PROJECTO: Contador de 0 a 99 con Display 7 Segmentos y Multiplexación
 
 
 ![](https://github.com/MatiasMazzino2001/1er-parcial-de-SPD/blob/main/primer%20parcial%20spd%202.jpeg)
