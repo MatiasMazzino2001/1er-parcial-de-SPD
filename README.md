@@ -45,7 +45,7 @@ En resumen, el código crea un contador con dos displays de 7 segmentos que pued
 https://www.tinkercad.com/things/84cOtP9RYw3-cool-kasi-fyyran/editel?tenant=circuits
 
 
-Fuentes
+:mailbox:Fuentes
 
 
 https://www.youtube.com/playlist?list=PL7LaR6_A2-E11BQXtypHMgWrSR-XOCeyD
