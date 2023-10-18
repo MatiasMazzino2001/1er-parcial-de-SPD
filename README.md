@@ -20,7 +20,7 @@ PROJECTO: Contador de 0 a 99 con Display 7 Segmentos y Multiplexación
 ![](https://github.com/MatiasMazzino2001/1er-parcial-de-SPD/blob/main/primer%20parcial%20spd%202.jpeg)
 
 
-Descripcion
+:bell:Descripcion
 
 
 Con este proyecto planteamos un codigo de arduino para crear un contador con displays de 7 segmentos y multiplexacion.
