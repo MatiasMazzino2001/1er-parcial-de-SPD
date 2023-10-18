@@ -21,9 +21,14 @@ PROJECTO: Contador de 0 a 99 con Display 7 Segmentos y Multiplexación
 
 
 Descripcion
+
+
 Con este proyecto planteamos un codigo de arduino para crear un contador con displays de 7 segmentos y multiplexacion.
 
+
 Funcion principal
+
+
 Este código se utiliza para crear un contador que muestra valores en dos displays de 7 segmentos y se controla mediante tres botones en un Arduino Uno R3 en Tinkercad. Su funcionalidad es la siguiente:
 Configura las conexiones de los displays de 7 segmentos y los botones en el Arduino.
 Utiliza tres botones para controlar el contador:
