@@ -9,9 +9,9 @@ Integrantes.
 
 :angel: matias Mazzino
 
-Valentin Giraldi
+:angel:Valentin Giraldi
 
-ignacio Villalba
+:angel:ignacio Villalba
 
 
 PROJECTO: Contador de 0 a 99 con Display 7 Segmentos y Multiplexación
