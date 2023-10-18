@@ -53,6 +53,16 @@ Parte 2: Modificación con Interruptor Deslizante y Números Primos
 ![](https://github.com/MatiasMazzino2001/1er-parcial-de-SPD/commit/90a6d5b804718e48844a57466c2b5ebee40ff666)
 
 
+
+
+
+
+
+
+
+
+
+
 :mailbox:Fuentes
 
 
