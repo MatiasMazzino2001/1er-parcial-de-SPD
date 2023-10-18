@@ -39,6 +39,9 @@ Utiliza la técnica de multiplexación para mostrar los dígitos del contador en
 Muestra los dígitos del contador de 0 a 99 en los displays de 7 segmentos.
 En resumen, el código crea un contador con dos displays de 7 segmentos que puede aumentar, disminuir y reiniciar su valor utilizando tres botones, y muestra el valor actual en los displays.
 
+Enlace del proyecto
+https://www.tinkercad.com/things/84cOtP9RYw3-cool-kasi-fyyran/editel?tenant=circuits
+
 
 
 
