@@ -1,0 +1,92 @@
+//definicion de los pines para los displays de 7 segmentos
+const int displayPins[] = {5, 6, 7, 8, 9, 10, 11};
+const int commonPins[] = {12, 13};
+
+//pines dede los botones e interruptor deslizante
+const int incrementButtonPin = 3;
+const int decrementButtonPin = 4;
+const int switchPin = 2;  // pin del interruptor deslizante
+
+int contador = 0;
+bool mostrarPrimos = false;
+
+void setup() {
+  //configura los pines de los displays y los botones entrada/salida
+  for (int i = 0; i < 7; ++i) {
+    pinMode(displayPins[i], OUTPUT);
+  }
+  for (int i= 0; i < 2; ++i) {
+    pinMode(commonPins[i], OUTPUT);
+  }
+  pinMode(incrementButtonPin, INPUT_PULLUP);
+  pinMode(decrementButtonPin, INPUT_PULLUP);
+  pinMode(switchPin, INPUT_PULLUP);
+}
+
+void loop() {
+  // lee el estado del interruptor deslizante
+  bool switchState = digitalRead(switchPin);
+  
+  // cambia entre contador y numeros primos en funcion de la posicion del interruptor
+  if (switchState == LOW) {
+    mostrarPrimos = true;
+  } else {
+    mostrarPrimos = false;
+  }
+  if (mostrarPrimos) {
+    //mostra el display de 7 segmentos en el display
+    displayPrimes();
+  } else {
+    //incrementa el contador si el boton de incrementar es presionado
+    int incrementButtonState = digitalRead(incrementButtonPin);
+    int decrementButtonState = digitalRead(decrementButtonPin);
+    
+    if(incrementButtonState == LOW) {
+      delay(50); // deboucing
+      if(incrementButtonState == LOW) {
+        contador = (contador + 1) % 100;
+      }
+    }
+    
+    if(decrementButtonState == LOW) {
+      delay(50); //deboucing
+      if(decrementButtonState == LOW) {
+        contador = (contador - + 100) % 100;
+      }
+    }
+    //muestra el valor del contador en el display de 7 segmentos
+    displayNumber(contador);
+  }
+}
+
+void displayPrimes() {
+  //numeros primos en el rango 0 99
+  int primes[] = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97};
+  
+  //contador para recorrer el array de numeros primos
+  static int primeIndex = 0;
+  
+  //muestra el numero actual en el display de 7 segmentos
+  displayNumber(primes[primeIndex]);
+  
+  //incrementa el indice de numeros primos, reiniciando si llegas al final
+  primeIndex = (primeIndex + 1) % (sizeof(primes) / sizeof(primes[0]));
+  //puedes agregar una pausa en el cambio de los numeros primos
+  //delay(1000); //espera 1 segundo entre cada numero primo (ajustable)
+}
+
+  
+  
+  
+  
+ void displayNumber(int number) {
+   //tabla de correspondencia para mostrar numeros en un display de 7 segmentos
+   byte numbers[10] = {B01111110, B00110000, B01101101, B01111001, B00110011, B01011011, B01011111, B01110000, B01111111, B01111011};
+    
+   //muestra el numero en el display de 7segmentos
+   for (int i = 0; i < 7; ++i) {
+     digitalWrite(displayPins[i], bitRead(numbers[number], i));
+   }
+ }
+  
+  
