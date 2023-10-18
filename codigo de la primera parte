@@ -1,0 +1,82 @@
+//definicion de pines para los displays de 7 segmentos
+const int displayPins[] = {5, 6, 7, 8, 9, 10, 11};
+const int commonPins[] = {12, 13};
+
+//pines de los botones
+const int incrementButtonPin = 2;
+const int decrementButtonPin = 3;
+const int resetButtonPin = 4;
+
+int contador = 0;
+
+void setup() {
+  //configura los pines de los displays y los botones como entrada/salida
+  for (int i = 0; i < 7; ++i) {
+    pinMode(displayPins[i], OUTPUT);
+  }
+  pinMode(incrementButtonPin, INPUT_PULLUP);
+  pinMode(decrementButtonPin, INPUT_PULLUP);
+  pinMode(resetButtonPin, INPUT_PULLUP);
+}
+
+void loop() {
+  //lee el estado de los botones
+  int incrementButtonState = digitalRead(incrementButtonPin);
+  int decrementButtonState = digitalRead(decrementButtonPin);
+  int resetButtonState = digitalRead(resetButtonPin);
+  
+  //Incremente el contador si el boton de incrementar es presionado
+  if (incrementButtonState == LOW) {
+    delay(50); //debouncing
+    if (incrementButtonState == LOW) {
+      contador = (contador + 1) % 100;
+    }
+  }
+  
+  //disminuye el contador si el boton de disminuir es presionado
+  if(decrementButtonState == LOW) {
+    delay(50); // deboucing
+    if(decrementButtonState == LOW) {
+      contador = (contador- 1 + 100) % 100;
+    }
+  }
+  
+  //reinicia el contador si el boton reset es precionado
+  if (resetButtonState == LOW) {
+    delay(50); //debouncing
+    if (resetButtonState == LOW){
+      contador = 0;
+    }
+  }
+  //actualiza los displays de 7 segmentos usando la tecnica de multiplexacion
+  int units = contador % 10;
+  int tens = contador/ 10;
+    
+  //muestra el digito de las unidades
+    digitalWrite(commonPins[1], HIGH);
+    displaynNumber(units);
+  
+  //espera un breve momento para evitar el parpadeo
+  delay(5);
+  
+  //muestra el digito de las decenas
+  digitalWrite(commonPins[1], LOW);
+  digitalWrite(commonPins[0], HIGH);
+  displaynNumber(tens);
+  
+  //espera un breve momento para evitar el parpadeo
+  delay(5);
+  //apaga los displays para evitar el parpadeo
+  digitalWrite(commonPins[0],LOW);
+               }
+  void displaynNumber(int number) {
+   //tabla de correspondencia para mostrar los numeros en el display de 7 segmentos
+    byte numbers[10] = {B01111110, B00110000, B01101101, B01111001, B00110011, B01011011, B01011111, B01110000, B01111111, B01111011};
+    
+    //muestra el numero en el display de 7 segmentos
+    for (int i = 0; i < 7; ++i) {
+      digitalWrite(displayPins[i], bitRead(numbers[number], i));
+    }
+  }
+  
+  
