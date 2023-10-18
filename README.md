@@ -14,7 +14,9 @@
 :angel:ignacio Villalba
 
 
-:bomb:PROJECTO: Contador de 0 a 99 con Display 7 Segmentos y Multiplexación
+:bomb:PROJECTO: 
+
+Parte 1: Contador de 0 a 99 con Display 7 Segmentos y Multiplexación
 
 
 ![](https://github.com/MatiasMazzino2001/1er-parcial-de-SPD/blob/main/primer%20parcial%20spd%202.jpeg)
@@ -43,6 +45,9 @@ En resumen, el código crea un contador con dos displays de 7 segmentos que pued
 
 
 https://www.tinkercad.com/things/84cOtP9RYw3-cool-kasi-fyyran/editel?tenant=circuits
+
+
+Parte 2: Modificación con Interruptor Deslizante y Números Primos
 
 
 :mailbox:Fuentes
