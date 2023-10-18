@@ -3,6 +3,12 @@ primer parcial de la materia de sistema de procesamiento de datos de la carrera 
 
 
 Integrantes.
+
+
+
+
 matias Mazzino
+
 Valentin Giraldi
+
 ignacio Villalba
