@@ -103,6 +103,10 @@ La integración de cualquiera de estos motores requerirá conocimientos adiciona
 :satellite:Enlace del proyecto
 https://www.tinkercad.com/things/cVglYRGo3dx-glorious-trug/editel
 
+Parte 3: Modificación según el Último Número de Documento
+![]()
+
+
 :mailbox:Fuentes
 
 
