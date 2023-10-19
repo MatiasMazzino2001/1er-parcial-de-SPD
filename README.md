@@ -31,6 +31,8 @@ Con este proyecto planteamos un codigo de arduino para crear un contador con dis
 :computer: Funcion principal
 
 
+
+
 Este código se utiliza para crear un contador que muestra valores en dos displays de 7 segmentos y se controla mediante tres botones en un Arduino Uno R3 en Tinkercad. Su funcionalidad es la siguiente:
 Configura las conexiones de los displays de 7 segmentos y los botones en el Arduino.
 Utiliza tres botones para controlar el contador:
@@ -110,6 +112,9 @@ Parte 3: Modificación según el Último Número de Documento
 En este ejercicio agregue al codigo y al sistema de arduino un snesor de luz ambiental
 
 :computer: Funcion principal
+
+
+
 Este código utiliza analogWrite() para controlar el brillo de los displays de 7 segmentos en función del valor del sensor de luz ambiental. Cuanto menor sea el valor del sensor (menos luz), mayor será el brillo, y viceversa.
 Con estas modificaciones, el brillo de los displays se ajustará automáticamente en función de la luz ambiente. Puedes personalizar la relación entre el valor del sensor y el brillo según tus preferencias.
 
