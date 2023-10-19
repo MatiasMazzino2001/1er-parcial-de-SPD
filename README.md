@@ -49,6 +49,9 @@ En resumen, el código crea un contador con dos displays de 7 segmentos que pued
 https://www.tinkercad.com/things/84cOtP9RYw3-cool-kasi-fyyran/editel?tenant=circuits
 
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 Parte 2: Modificación con Interruptor Deslizante y Números Primos
 
 
@@ -105,6 +108,10 @@ La integración de cualquiera de estos motores requerirá conocimientos adiciona
 :satellite:Enlace del proyecto
 https://www.tinkercad.com/things/cVglYRGo3dx-glorious-trug/editel
 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 Parte 3: Modificación según el Último Número de Documento
 ![](https://github.com/MatiasMazzino2001/1er-parcial-de-SPD/blob/main/primer%20parcial%205.jpeg)
 
@@ -117,6 +124,12 @@ En este ejercicio agregue al codigo y al sistema de arduino un snesor de luz amb
 
 Este código utiliza analogWrite() para controlar el brillo de los displays de 7 segmentos en función del valor del sensor de luz ambiental. Cuanto menor sea el valor del sensor (menos luz), mayor será el brillo, y viceversa.
 Con estas modificaciones, el brillo de los displays se ajustará automáticamente en función de la luz ambiente. Puedes personalizar la relación entre el valor del sensor y el brillo según tus preferencias.
+
+
+:satellite:Enlace del proyecto
+
+https://www.tinkercad.com/things/3TlC1yKYHy3-copy-of-segunda-parte-examen-de-spd/editel?tenant=circuits
+
 
 :mailbox:Fuentes
 
