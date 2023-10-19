@@ -68,6 +68,38 @@ En resumen, el código principal controla un contador y alterna entre mostrar el
 
 
 
+
+:floppy_disk: EJERCICIO 2
+
+:books: Motor de Corriente Continua (Motor DC)
+Descripción del Componente:
+Un motor de corriente continua (motor DC) es un dispositivo que convierte energía eléctrica en energía mecánica. Puede girar en ambas direcciones (en sentido horario y antihorario) y se utiliza comúnmente en proyectos de robótica, automatización y control de dispositivos.
+
+Función en el Proyecto:
+Puedes integrar un motor DC para agregar una función adicional, como una alarma visual o sonora cuando se alcance un valor específico en el contador. Por ejemplo, cuando el contador llega a 99, el motor DC podría activarse para hacer girar un objeto o activar una alarma.
+
+Integración en el Proyecto:
+
+Conecta el motor DC a un transistor o un relé para controlarlo desde el Arduino. El Arduino puede controlar la activación del motor en función de la condición del contador.
+
+Programa el Arduino para que, cuando se alcance el valor deseado en el contador, active el motor DC. Puedes ajustar la lógica de activación según tus necesidades.
+
+:books: Motor de Ventilador (Motor de Aficionado)
+Descripción del Componente:
+Un motor de ventilador (motor de aficionado) es un tipo de motor de corriente continua utilizado en ventiladores, enfriadores y otros dispositivos de flujo de aire. Puede generar una corriente de aire que puede ser útil en proyectos de control de temperatura.
+
+Función en el Proyecto:
+Integrar un motor de ventilador podría permitirte controlar la temperatura en tu proyecto. Por ejemplo, cuando el valor del contador alcance cierto umbral, el motor de ventilador podría activarse para enfriar el sistema.
+
+Integración en el Proyecto:
+
+Conecta el motor del ventilador a un transistor o un módulo de relé para controlarlo desde el Arduino.
+
+Programa el Arduino para que, cuando el valor del contador alcance el umbral de temperatura deseado, active el motor del ventilador para enfriar el sistema.
+
+La integración de cualquiera de estos motores requerirá conocimientos adicionales de electrónica y programación, pero puede agregar funcionalidades interesantes y prácticas a tu proyecto de contador. Asegúrate de tomar las precauciones necesarias al trabajar con componentes eléctricos y de entender cómo controlarlos de manera segura desde tu Arduino.
+
+
 :satellite:Enlace del proyecto
 https://www.tinkercad.com/things/cVglYRGo3dx-glorious-trug/editel
 
