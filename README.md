@@ -104,7 +104,11 @@ La integración de cualquiera de estos motores requerirá conocimientos adiciona
 https://www.tinkercad.com/things/cVglYRGo3dx-glorious-trug/editel
 
 Parte 3: Modificación según el Último Número de Documento
-![]()
+![](https://github.com/MatiasMazzino2001/1er-parcial-de-SPD/blob/main/primer%20parcial%205.jpeg)
+
+:bell:Descripcion
+e
+
 
 
 :mailbox:Fuentes
